@@ -5,7 +5,7 @@ var mapsKey = process.env.MAPS_URL;
 /* GET home page. */
 router.get('/', function(req, res, next) {
   // unirest.get('https://www.google.com/maps/embed/v1/search?key=');
-  res.render('index', { src: 'https://www.google.com', title: 'Disc Golf Courses in the Denver Metro Area' });
+  res.render('index', { src: mapsKey, title: 'Disc Golf Courses in the Denver Metro Area' });
 });
 
 module.exports = router;
