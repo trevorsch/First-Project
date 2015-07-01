@@ -4,8 +4,21 @@ var unirest = require('unirest');
 var mapsKey = process.env.MAPS_URL;
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  // unirest.get('https://www.google.com/maps/embed/v1/search?key=');
-  res.render('index', { src: mapsKey, title: 'Disc Golf Courses in the Denver Metro Area' });
+  var url="https://www.google.com/maps/embed/v1/search?key=AIzaSyCaGK6UNCGfCcwnW8R5zSLmQQyqytXYMWE&q=Denver";
+  res.render('index', { src: url, title: 'Disc Golf Courses in the Denver Metro Area' });
 });
+
+function initialize(){
+    var markerPositionTest = new google.maps.LatLng(39.856339, -104.672876);
+    var mapOptions = {
+      center: markerPositionTest
+    };
+    var map = new google.maps.Map(document.getElementById('map_frame'), mapOptions);
+    var marker = new google.maps.Marker({
+        position: markerPositionTest,
+        title:"Test"
+    });
+marker.setMap(map);
+}
 
 module.exports = router;
