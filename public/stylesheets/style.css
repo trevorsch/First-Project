@@ -6,3 +6,8 @@ body {
 a {
   color: #00B7FF;
 }
+
+.resize {
+  width: 90%;
+  height: 90%;
+}
