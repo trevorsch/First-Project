@@ -8,17 +8,4 @@ router.get('/', function(req, res, next) {
   res.render('index', { src: url, title: 'Denver Disc Golf' });
 });
 
-function initialize(){
-    var markerPositionTest = new google.maps.LatLng(39.856339, -104.672876);
-    var mapOptions = {
-      center: markerPositionTest
-    };
-    var map = new google.maps.Map(document.getElementById('map_frame'), mapOptions);
-    var marker = new google.maps.Marker({
-        position: markerPositionTest,
-        title:"Test"
-    });
-marker.setMap(map);
-}
-
 module.exports = router;
