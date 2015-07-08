@@ -22,3 +22,9 @@ a {
 .window-text {
   font-size: 20px;
 }
+
+#boulder-button {
+  float: right;
+  width: 100px;
+  font-size: 20px;
+}
