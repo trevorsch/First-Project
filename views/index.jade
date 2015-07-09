@@ -15,9 +15,9 @@ html
       center: centerLatlng,
       zoom: 11,
       };
+      var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
       
       //Add first marker
-      var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
       var kenMark = new google.maps.Marker({
         position: kenLatLng,
         icon: basket
@@ -76,7 +76,7 @@ html
     h1= title
       form(action='/', method='get')
         input#reset-button(type='submit' value='Reset Map')
-      form(action='/' method='get')
+      form(action='/boulder' method='get')
         input#boulder-button(type='submit' value='Boulder Courses')
     div#map-canvas
       
