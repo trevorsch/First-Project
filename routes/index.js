@@ -11,4 +11,6 @@ router.get('/boulder', function(req, res, next) {
   res.render('boulder', {title: 'Boulder Disc Golf Courses'});
 });
 
+
+
 module.exports = router;
