@@ -14,9 +14,7 @@ a {
 }
 
 #reset-button {
-  /*float:right;*/
   width: 100px;
-  /*font-size: 20px;*/
 }
 
 .window-text {
@@ -24,7 +22,5 @@ a {
 }
 
 #boulder-button {
-  /*float: right;*/
   width: 100px;
-  /*font-size: 20px;*/
 }
