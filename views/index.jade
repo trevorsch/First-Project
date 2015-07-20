@@ -63,7 +63,7 @@ html
       animation: google.maps.Animation.DROP
       });
       var infoWindowJohn = new google.maps.InfoWindow({
-        content: 'Johnny Roberts<br>Hours: Dawn - Dusk<br>Length: 18 Holes<br>Price: Free<br>Difficulty: Moderate'
+        content: 'Johnny Roberts<br>Hours: Dawn - Dusk<br>Length: 18 Holes<br>Price: Free<br>Difficulty: Moderate',
       });
       google.maps.event.addListener(johnMark, 'click', function(){
       infoWindowJohn.open(map, johnMark)
@@ -83,5 +83,3 @@ html
       form(action='/boulder' method='get')
         input#boulder-button(type='submit' value='Boulder Courses')
     div#map-canvas
-      
-      

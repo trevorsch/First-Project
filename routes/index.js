@@ -5,7 +5,6 @@ var markerCollection = db.get('markers');
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Denver Disc Golf Courses'});
-  // console.log(markerCollection);
 });
 
 router.get('/boulder', function(req, res, next) {
